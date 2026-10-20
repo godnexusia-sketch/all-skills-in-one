@@ -1,0 +1,15 @@
+{
+  "name": "all-skills-in-one",
+  "owner": {
+    "name": "godnexus"
+  },
+  "description": "Mega-skill: todas as skills reunidas em um único pacote, compatível com Claude Code, Codex e outros agentes.",
+  "plugins": [
+    {
+      "name": "all-skills-in-one",
+      "source": "./",
+      "description": "Todas as 953 skills em um só pacote, sem exceção.",
+      "version": "1.0.0"
+    }
+  ]
+}
