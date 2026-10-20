@@ -13,9 +13,9 @@ texto completo da licença.
 - iamneilroberts/claude-skills
 - DeusData/codebase-memory-mcp
 - msitarzewski/agency-agents
-- mukul975/anthropic-cybersecurity-skills
 - upstash/context7
-- usestrix/strix
 
 Skills locais adicionais (skill-autopilot etc.) são originais desta coleção.
 Se você é autor de uma skill aqui e quer alteração de crédito ou remoção, abra uma issue.
+
+> As fontes de segurança ofensiva (mukul975/anthropic-cybersecurity-skills, usestrix/strix) foram removidas desta coleção pública.
