@@ -2,7 +2,7 @@
 
 > **Uma única skill que contém todas as outras.** As funções de todos os projetos reunidas em um só
 > pacote — compatível com **Claude Code, OpenAI Codex, Cursor e Gemini CLI**.
-> Contém **126 skills** e **300 agentes**, cada um acionável individualmente.
+> Contém **127 skills** e **300 agentes**, cada um acionável individualmente.
 
 ## O que cada projeto é responsável por
 
@@ -17,6 +17,7 @@
 - **DeusData/codebase-memory-mcp** — responsável pelo grafo de conhecimento do código: busca estrutural, trace de chamadas, visão de arquitetura, análise de impacto, detecção de dead code e consultas Cypher (via MCP).
 - **msitarzewski/agency-agents** — responsável por um roster de agentes especialistas (engenharia, design, finanças, marketing, produto, pesquisa, testes, etc.), incluídos em `agents/`.
 - **upstash/context7** — responsável por trazer documentação atualizada e específica por versão direto da fonte para o contexto do agente (find-docs + MCP).
+- **Panniantong/Agent-Reach** — responsável por dar capacidade de internet ao agente: pesquisa e busca em 16 plataformas (小红书/xhs, Twitter/X, Reddit, B站, V2EX, Facebook, Instagram, LinkedIn, GitHub, YouTube, 小宇宙, 雪球, RSS e web) com roteamento multi-backend (skill `agent-reach` + CLI).
 - **harness/harness** — responsável por CI/CD e hospedagem Git; é uma plataforma (servidor próprio), representada aqui como integração, não como skill.
 - **mukul975/anthropic-cybersecurity-skills** — *removido desta coleção pública por segurança* (segurança ofensiva/forense).
 - **usestrix/strix** — *removido desta coleção pública por segurança* (agentes autônomos de pentest).
@@ -36,9 +37,10 @@ Ou: `cp -r skills/* ~/.claude/skills/` e `cp agents/* ~/.claude/agents/`
 npx -y skills add godnexusia-sketch/all-skills-in-one -a '*' -g -y
 ```
 
-## Lista completa das 126 skills incluídas
+## Lista completa das 127 skills incluídas
 
 - `access` — Manage Discord channel access — approve pairings, edit allowlists, set DM/group policy.
+- `agent-reach` — Dá acesso à internet ao agente: pesquisa/busca em 16 plataformas com roteamento multi-backend.
 - `Agent Cost Report` — - Believable agent cost report for any period, default the last 7 full days PT, not counting today.
 - `agent-development` — This skill should be used when the user asks to "create an agent", "add an agent", "write a subagent", "agent frontmatter", "when to use description", "agent...
 - `babysit` — Watch a pull request or review cycle until it is ready to merge.

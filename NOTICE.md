@@ -14,6 +14,7 @@ texto completo da licença.
 - DeusData/codebase-memory-mcp
 - msitarzewski/agency-agents
 - upstash/context7
+- Panniantong/Agent-Reach
 
 Skills locais adicionais (skill-autopilot etc.) são originais desta coleção.
 Se você é autor de uma skill aqui e quer alteração de crédito ou remoção, abra uma issue.

@@ -9,14 +9,15 @@ description: >-
   pela otimização de contexto/custo de LLM; anthropics/claude-plugins-official pelas skills utilitárias oficiais;
   iamneilroberts/claude-skills pelos workflows de sessão (handoff, review, sitrep); DeusData/codebase-memory-mcp
   pelo grafo de conhecimento do código; msitarzewski/agency-agents pelos agentes especialistas; upstash/context7
-  pela documentação ao vivo. (mukul975/anthropic-cybersecurity-skills e usestrix/strix removidos por segurança.)
-  Contém 126 skills e 300 agentes; cada um mantém seu próprio arquivo e continua acionável individualmente.
+  pela documentação ao vivo; Panniantong/Agent-Reach por dar acesso à internet ao agente (pesquisa em 16
+  plataformas). (mukul975/anthropic-cybersecurity-skills e usestrix/strix removidos por segurança.)
+  Contém 127 skills e 300 agentes; cada um mantém seu próprio arquivo e continua acionável individualmente.
 user_invocable: true
 ---
 
 # All Skills In One — a mega-skill que contém todas as outras
 
-Uma única skill que empacota as funções de todos os projetos abaixo. Contém **126 skills** (em
+Uma única skill que empacota as funções de todos os projetos abaixo. Contém **127 skills** (em
 `skills/<nome>/SKILL.md`) e **300 agentes** (em `agents/`), cada um acionável individualmente.
 
 ## O que cada projeto é responsável por
@@ -32,6 +33,7 @@ Uma única skill que empacota as funções de todos os projetos abaixo. Contém 
 - **DeusData/codebase-memory-mcp** — responsável pelo grafo de conhecimento do código: busca estrutural, trace de chamadas, visão de arquitetura, análise de impacto, detecção de dead code e consultas Cypher (via MCP).
 - **msitarzewski/agency-agents** — responsável por um roster de agentes especialistas (engenharia, design, finanças, marketing, produto, pesquisa, testes, etc.), incluídos em `agents/`.
 - **upstash/context7** — responsável por trazer documentação atualizada e específica por versão direto da fonte para o contexto do agente (find-docs + MCP).
+- **Panniantong/Agent-Reach** — responsável por dar capacidade de internet ao agente: pesquisa e busca em 16 plataformas (小红书/xhs, Twitter/X, Reddit, B站/bilibili, V2EX, Facebook, Instagram, LinkedIn, GitHub, YouTube, 小宇宙, 雪球, RSS e web) com roteamento multi-backend (skill `agent-reach` + CLI).
 - **harness/harness** — responsável por CI/CD e hospedagem Git; é uma plataforma (servidor próprio), representada aqui como integração, não como skill.
 - **mukul975/anthropic-cybersecurity-skills** — *removido desta coleção pública por segurança* (segurança ofensiva/forense).
 - **usestrix/strix** — *removido desta coleção pública por segurança* (agentes autônomos de pentest).
@@ -41,9 +43,10 @@ Uma única skill que empacota as funções de todos os projetos abaixo. Contém 
 Formato `SKILL.md` portátil. Roda em **Claude Code** (plugin ou copiar `skills/` para `~/.claude/skills/`),
 e em **Codex / Cursor / Gemini CLI / outros** via `npx skills add godnexusia-sketch/all-skills-in-one`.
 
-## Lista completa das 126 skills incluídas
+## Lista completa das 127 skills incluídas
 
 - `access` — Manage Discord channel access — approve pairings, edit allowlists, set DM/group policy.
+- `agent-reach` — Dá acesso à internet ao agente: pesquisa/busca em 16 plataformas (xhs, Twitter/X, Reddit, bilibili, LinkedIn, GitHub, YouTube, RSS, web) com roteamento multi-backend.
 - `Agent Cost Report` — - Believable agent cost report for any period, default the last 7 full days PT, not counting today.
 - `agent-development` — This skill should be used when the user asks to "create an agent", "add an agent", "write a subagent", "agent frontmatter", "when to use description", "agent...
 - `babysit` — Watch a pull request or review cycle until it is ready to merge.
