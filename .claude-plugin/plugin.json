@@ -1,7 +1,7 @@
 {
   "name": "all-skills-in-one",
   "version": "1.0.0",
-  "description": "Uma única skill que contém 126 skills de produtividade, desenvolvimento e documentação. Compatível com Claude Code, Codex, Cursor e Gemini CLI.",
+  "description": "Uma única skill com as funções de todos os projetos (126 skills + 300 agentes), agrupadas por projeto. Compatível com Claude Code, Codex, Cursor e Gemini CLI.",
   "author": {
     "name": "godnexus"
   },
